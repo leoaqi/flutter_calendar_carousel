@@ -482,6 +482,7 @@ class _CalendarState<T extends EventInterface>
         onLongPress: () => _onDayLongPressed(now),
         child: TextButton(
           style: TextButton.styleFrom(
+            splashFactory: NoSplash.splashFactory,
             shape: widget.markedDateCustomShapeBorder != null &&
                     markedDatesMap != null &&
                     markedDatesMap.getEvents(now).length > 0
